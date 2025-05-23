@@ -1,1 +1,7 @@
-# Frekwencja-C-Sharp
+Program to aplikacja konsolowa napisana w języku C#, która umożliwia zarządzanie kursami, studentami oraz ich wynikami i obecnością na zajęciach. Całość opiera się na prostym systemie menu, w którym użytkownik może poruszać się po kolejnych opcjach: dodawać nowe kursy, przypisywać studentów, wpisywać oceny oraz rejestrować frekwencję.
+
+Każdy kurs przechowuje swoją nazwę oraz listę studentów zapisanych na ten kurs. Student ma przypisane imię, listę ocen (w postaci liczb zmiennoprzecinkowych) oraz dwa liczniki: liczba zajęć i liczba obecności. Frekwencja zapisywana jest jako informacja o tym, czy student był obecny danego dnia – przy każdym zaznaczeniu obecności wszystkim studentom zwiększany jest licznik zajęć, a tym obecnym dodatkowo licznik obecności.
+
+Oceny można wpisywać indywidualnie – użytkownik wybiera kurs, potem konkretnego studenta i podaje ocenę. Frekwencja rejestrowana jest zbiorczo – dla każdego studenta pojawia się pytanie, czy był obecny. Program umożliwia również wygenerowanie raportu, w którym wypisane są dane każdego studenta: jego oceny, obliczona średnia oraz stosunek obecności do liczby wszystkich zajęć.
+
+Dane w programie przechowywane są w pamięci RAM – kursy i studenci są trzymani w listach. Klasa Kurs zawiera listę studentów, a każdy student przechowuje swoje dane wewnątrz klasy Student. Program działa w nieskończonej pętli, aż do momentu wybrania opcji zakończenia.
